@@ -7,56 +7,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="app.css">
 
-
   <title>NFTS</title>
 </head>
 
 <body>
   <main class="container">
     <header>
-      <nav class="container-wrapper">
-        <div class="wrapper-head-left">
-          <a href="">
-            <img src="images/2.png" alt="#">
+      <nav class="nav-bar">
+        <div class="nav-left">
+          <a href="#">
+            <img src="images/2.png" alt="logo">
           </a>
         </div>
-        <div class="wrapper-head-center">
-          <div class="link-wrapper">
-            <a class="link text-pink" href="">Home</a>
-          </div>
-          <div>
-            <a class="link text-white" href="">About</a>
-          </div>
-          <div>
-            <a class="link text-white" href="">Roadmap</a>
-          </div>
-          <div>
-            <a class="link text-white" href="">Team</a>
-          </div>
-
-          <div class="wrapper-head-right">
-            <div class="nfts-wrapper">
-              <a class="nfts-logo text-white" href="">NFTS</a>
-            </div>
-            <div class="onblog-wrapper">
-              <a class="link text-green" href="">On Blog</a>
-            </div>
-          </div>
+        <div class="nav-center">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Roadmap</a>
+          <a href="#">Team</a>
+        </div>
+        <div class="nav-right">
+          <a id="nav-nfts" href="#">NFTs</a>
+          <a id="nav-on-blog" href="#">on Blog</a>
         </div>
       </nav>
     </header>
-    <section>
-      <div class="img">
-        <img class="main-pic" src="images/1.png" />
-        <img src="https://wordpress.altdesain.com/wpalt/nft-creator/wp-content/uploads/2022/02/slider-imgs1.png" />
-
+    <div class="slider-container">
+      <div class="main-img">
+        <img src="images/1.png">
+        <div class="diamond">
+          <img src="images/diamond.png" alt="logo">
+        </div>
+        <div class="slider-texts">
+          <h1 class="big-text"></h1>
+          <h3 class="small-text"></h3>
+        </div>
+        <div class="sliders">
+          <label></label>
+          <label></label>
+          <label></label>
+        </div>
       </div>
-      <div class="text">
-        <h1>Crystal On</h1>
-        <h4 class="metavers">Metavers</h4>
-      </div>
 
-    </section>
+    </div>
 
     <section class="section-two">
       <div class="middle-img">
@@ -100,8 +92,8 @@
 
             </p>
           </div>
-          <div class="footer-nfts">
-            <a class="text-white btn-learn-about" href="" target="#">Learn About</a>
+          <div class="lear-about-btn">
+            <a class="text-white" href="" target="#">Learn About</a>
           </div>
         </div>
       </div>
@@ -121,7 +113,9 @@
             </p>
           </div>
           <div class="squad-btn">
-            <button>view Teams</button>
+            <button class="view-teams">
+              <a href="">view Teams</a>
+            </button>
           </div>
         </div>
         <div class="person">
@@ -302,7 +296,7 @@
     </section>
 
   </main>
-
+  <script src="app.js"></script>
 </body>
 
 </html>
